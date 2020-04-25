@@ -103,6 +103,7 @@ persist.camera.gyro.disable=0
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.systemuicompilerfilter=speed
 
 # Display
