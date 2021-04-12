@@ -17,6 +17,7 @@ persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 ro.vendor.audio.game.effect=true
 ro.vendor.audio.hifi=true
 ro.vendor.audio.ring.filter=true
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 ro.vendor.audio.sfx.earadj=true
