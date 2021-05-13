@@ -25,7 +25,9 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
+    <permission
+        android:name="org.superior.device.MANAGE_POPUP_CAMERA_SERVICE"
+        android:protectionLevel="signature|privileged" />
 
     <uses-sdk
         android:minSdkVersion="24"
@@ -58,11 +60,6 @@
         </activity>
 
         <service
-            android:name=".doze.DozeService"
-            android:permission="XiaomiDozeService">
-        </service>
-
-        <service
             android:name=".popupcamera.PopupCameraService"
             android:permission="PopupCameraService">
         </service>
@@ -71,18 +68,6 @@
             android:name=".fod.FodService"
             android:permission="FodService">
         </service>
-
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
-        </activity>
 
         <activity
             android:name=".popupcamera.PopupCameraSettingsActivity"
