@@ -132,14 +132,6 @@ case "$target" in
 	echo 400000000 > /proc/sys/kernel/sched_coloc_downmigrate_ns
 	echo 30 > /proc/sys/kernel/sched_min_task_util_for_colocation 
 
-	# cpuset parameters
-        echo 0-2     > /dev/cpuset/background/cpus
-        echo 0-3     > /dev/cpuset/system-background/cpus
-        echo 4-7     > /dev/cpuset/foreground/boost/cpus
-        echo 0-2,4-7 > /dev/cpuset/foreground/cpus
-        echo 0-7     > /dev/cpuset/top-app/cpus
-        echo 0-3     > /dev/cpuset/restricted/cpus
-
 	# Turn off scheduler boost at the end
 	echo 0 > /proc/sys/kernel/sched_boost
 
