@@ -66,6 +66,11 @@ TARGET_NO_BOOTLOADER := true
 # Build
 BUILD_BROKEN_DUP_RULES := true
 
+# Debug
+ifneq ($(SUPERIOR_OFFICIAL), true)
+TARGET_FORCE_RO_DEBUGGABLE := true
+endif
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_ION := true
