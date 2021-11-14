@@ -102,6 +102,7 @@ camera.disable_zsl_mode=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.msmnile.api30
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
