@@ -105,6 +105,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 dalvik.vm.systemuicompilerfilter=speed
 
 # Display
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.msmnile.api30
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
