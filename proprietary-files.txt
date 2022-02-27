@@ -1318,6 +1318,17 @@ vendor/lib64/unnhal-acc-hta.so
 vendor/lib/libopenvx.so
 vendor/lib64/libopenvx.so
 
+# Perf Configs
+vendor/etc/lm/AdaptLaunchFeature.xml|bc226e5b64cae1d0bb637eb316626868b97e7c3f
+vendor/etc/lm/AppClassifierFeature.xml|80bcbf8fc50ed706e8549432140323dbb9e8ae4c
+vendor/etc/lm/GameOptimizationFeature.xml|5314e8dfdf363d0fbe4599ba64e3e765878569b9
+vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
+vendor/etc/perf/perfboostsconfig.xml|93e57b38e327bfbc174e925d639745e66949229b
+vendor/etc/perf/perfconfigstore.xml|62f780c6f974a62d18a66d0dcee30efb04903512
+vendor/etc/perf/targetconfig.xml|95f511bb4030b2755a0b340814fe41cccac994ab
+vendor/etc/perf/targetresourceconfigs.xml|44e33511b57320fade366bfd5be83dcf5930f540
+vendor/etc/powerhint.xml|ee26fbedb113b08c50421d4fab6d0b5062c91ed4
+
 # Pasrmanager
 -vendor/app/pasrservice/pasrservice.apk
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
@@ -1620,6 +1631,7 @@ vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|f07351c06ab72cd8bb7ce5470fc2c2d
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|c1110e2a16fd7505403ff5fdb188f4bf79a15a66
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so|0adf6914c748d64478bc1f8621b1019718b98873
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so|4f5babb3ab95e75ec83021630088b6bf5f29e8a9
+vendor/lib64/vendor.qti.hardware.radio.lpa@1.2.so|44b695670cfac3eef96a156ae69feb9799693d92
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so|e4200bbfa997049ec71474fe82c77bbdb8aa8b0d
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so|878abcaed56bbb9cbe075a592a96f551c41574dd
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so|613283f40fb04592abc8ae4f506f3fca7a2d1a3a
