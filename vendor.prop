@@ -104,6 +104,7 @@ ro.crypto.volume.options=::v2
 
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemuicompilerfilter=speed
 
 # Display
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.msmnile.api30
