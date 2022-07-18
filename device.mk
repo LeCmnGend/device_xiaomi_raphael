@@ -78,6 +78,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libbatterylistener \
+    libexthwplugin \
+    libspkrprot \
     libvolumelistener \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -124,6 +126,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.motor@1.0.vendor \
+    android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
