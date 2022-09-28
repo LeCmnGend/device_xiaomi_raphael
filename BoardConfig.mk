@@ -116,14 +116,18 @@ BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_HEADER_ARCH := arm64
-#TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
-TARGET_KERNEL_USE_LLD := true
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := proton
-TARGET_KERNEL_CONFIG := raphael_defconfig
+TARGET_KERNEL_CONFIG := vendor/raphael-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
 #Disable appended dtb
 TARGET_KERNEL_APPEND_DTB := true
+
+# Prebuilt kerne
+ifneq "$(wildcard $(TARGET_KERNEL_SOURCE)/prebuilt )" ""
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(TARGET_KERNEL_SOURCE)/prebuilt/Image.gz-dtb
+BOARD_PREBUILT_DTBOIMAGE := $(TARGET_KERNEL_SOURCE)/prebuilt/dtbo.img
+endif
+
 # Set Header version for bootimage
 ifneq ($(strip $(TARGET_KERNEL_APPEND_DTB)),true)
 #Enable dtb in boot image and Set Header version
