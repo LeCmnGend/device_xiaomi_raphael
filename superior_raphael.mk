@@ -16,17 +16,18 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-DEVICE_REQUIRES_CARRIER_APPS := true
-EVO_BUILD_TYPE := OFFICIAL
-EXTRA_FOD_ANIMATIONS := true
+# Inherit some common Superior stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
+SUPERIOR_BUILD_TYPE := UNOFFICIAL
+
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_raphael
+PRODUCT_NAME := superior_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
+DEVICE_MAINTAINER := LeCmnGend
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

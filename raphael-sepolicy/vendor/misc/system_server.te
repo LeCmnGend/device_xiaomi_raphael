@@ -1,0 +1,2 @@
+allow system_server app_zygote:process { getpgid };
+allow system_server vendor_proc_shs:dir search;
