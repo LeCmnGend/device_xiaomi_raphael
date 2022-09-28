@@ -40,7 +40,14 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
-TARGET_KERNEL_CONFIG := raphael_user_defconfig
+TARGET_KERNEL_CONFIG := vendor/raphael-perf_defconfig
+
+# Prebuilt kerne
+ifneq "$(wildcard $(TARGET_KERNEL_SOURCE)/prebuilt)" ""
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(TARGET_KERNEL_SOURCE)/prebuilt/Image.gz-dtb
+BOARD_PREBUILT_DTBOIMAGE := $(TARGET_KERNEL_SOURCE)/prebuilt/dtbo.img
+endif
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
