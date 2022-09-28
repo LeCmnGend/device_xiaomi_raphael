@@ -5,8 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_raphael.mk
+    $(LOCAL_DIR)/superior_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_raphael-userdebug \
-    aosp_raphael-eng
+    superior_raphael-user \
+    superior_raphael-userdebug \
+    superior_raphael-eng
