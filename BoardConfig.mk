@@ -116,7 +116,7 @@ BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_CONFIG := vendor/raphael-perf_defconfig
+TARGET_KERNEL_CONFIG := raphael_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
 #Disable appended dtb
 TARGET_KERNEL_APPEND_DTB := true
