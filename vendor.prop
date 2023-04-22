@@ -109,6 +109,7 @@ dalvik.vm.systemuicompilerfilter=speed
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.msmnile.api30
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
+vendor.display.qdcm.disable_factory_mode=1
 
 # DRM
 drm.service.enabled=true
