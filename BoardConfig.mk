@@ -230,9 +230,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
-# Sensors
-USE_SENSOR_MULTI_HAL := true
-
 # Sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 include device/qcom/sepolicy_vndr/SEPolicy.mk
