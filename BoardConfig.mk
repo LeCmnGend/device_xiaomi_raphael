@@ -71,6 +71,9 @@ ifneq ($(SYBERIA_OFFICIAL), true)
 TARGET_FORCE_RO_DEBUGGABLE := true
 endif
 
+# Camera
+MALLOC_SVELTE := true
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_ION := true
