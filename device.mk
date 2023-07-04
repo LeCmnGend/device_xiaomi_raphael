@@ -589,11 +589,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
-    libnl \
-    libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+    libnl
 
 # Updater
 PRODUCT_PACKAGES += \
