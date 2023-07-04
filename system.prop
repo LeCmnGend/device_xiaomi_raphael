@@ -135,7 +135,3 @@ persist.timed.enable=true
 
 # WiFi
 config.disable_rtt=true
-
-# Wifi Display
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
