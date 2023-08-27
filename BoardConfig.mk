@@ -67,7 +67,7 @@ TARGET_NO_BOOTLOADER := true
 BUILD_BROKEN_DUP_RULES := true
 
 # Debug
-ifneq ($(SUPERIOR_OFFICIAL), true)
+ifneq ($(CR_OFFICIAL), true)
 TARGET_FORCE_RO_DEBUGGABLE := true
 endif
 

@@ -16,7 +16,7 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common Superior stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 SUPERIOR_BUILD_TYPE := UNOFFICIAL
 
 # Bootanimation
@@ -33,7 +33,7 @@ TARGET_WANTS_FOD_ANIMATIONS := true
 TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_raphael
+PRODUCT_NAME := lineage_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
