@@ -38,7 +38,8 @@
 /dev/block/bootdevice/by-name/system                    /                        ext4    ro,barrier=1,discard                                 wait
 /dev/block/bootdevice/by-name/vendor                    /vendor                  ext4    ro,barrier=1                                         wait,recoveryonly
 /dev/block/bootdevice/by-name/cache                     /cache                   ext4    nosuid,noatime,nodev,barrier=1                       wait
-/dev/block/bootdevice/by-name/metadata                  /metadata                ext4    noatime,nosuid,nodev,discard,data=journal,commit=1                         wait,check,formattable
+/dev/block/bootdevice/by-name/cache                     /cache                   f2fs    nosuid,noatime,nodev,barrier=1                       wait
+/dev/block/bootdevice/by-name/metadata                  /metadata                ext4    nosuid,nodev,noatime,barrier=1,inline_xattr,flush_merge,data_flush   wait
 /dev/block/bootdevice/by-name/userdata                  /data                    ext4    noatime,nosuid,nodev,barrier=1,noauto_da_alloc,inlinecrypt       latemount,wait,check,encryptable=ice,wrappedkey,reservedsize=128M,quota
 /dev/block/bootdevice/by-name/userdata                  /data                    f2fs    noatime,nosuid,nodev,discard,fsync_mode=nobarrier,inlinecrypt    latemount,wait,check,encryptable=ice,wrappedkey,reservedsize=128M,quota
 /dev/block/bootdevice/by-name/modem                     /vendor/firmware_mnt     vfat    ro,shortname=lower,uid=0,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0 wait
